@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Parallel Suite">
+	<test thread-count="5" parallel="tests" name="Parallel Test1">
+		<classes>
+			<class name="testPackage.ScenarioTest1" />
+
+		</classes>
+	</test> <!-- Parallel Test -->
+	<test thread-count="5" parallel="tests" name="Parallel Test2">
+		<classes>
+			<class name="testPackage.LeadsTest" />
+
+		</classes>
+	</test> <!-- Parallel Test -->
+	<test thread-count="5" parallel="tests" name="Parallel Test3">
+		<classes>
+
+			<class name="testPackage.AttributeTest" />
+
+		</classes>
+	</test> <!-- Parallel Test -->
+	<test thread-count="5" parallel="tests" name="Parallel Test4">
+		<classes>
+
+			<class name="testPackage.OrganisationsTest" />
+
+		</classes>
+	</test> <!-- Parallel Test -->
+	<test thread-count="5" parallel="tests" name="Parallel Test5">
+		<classes>
+
+			<class name="testPackage.ContactsTest" />
+
+		</classes>
+	</test> <!-- Parallel Test -->
+
+</suite> <!-- Parallel Suite -->

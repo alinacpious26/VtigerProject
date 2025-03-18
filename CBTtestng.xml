@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="CBTSuite">
+
+  <test thread-count="5" parallel="tests" name="CBTTest1">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testPackage.ContactsTest"/>
+    </classes>
+  </test> <!-- CBTTest -->
+  <test thread-count="5" parallel="tests" name="CBTTest2">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="testPackage.ContactsTest"/>
+    </classes>
+  </test> <!-- CBTTest -->
+  <test thread-count="5" parallel="tests" name="CBTTest3">
+  <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="testPackage.ContactsTest"/>
+    </classes>
+  </test> <!-- CBTTest -->
+</suite> <!-- CBTSuite -->

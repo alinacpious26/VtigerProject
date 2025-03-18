@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Contact Suite">
+<parameter name="browser" value="chrome"></parameter>
+  <test thread-count="5" name="Contact Test">
+    <classes>
+      <class name="testPackage.ContactsTest"/>
+    </classes>
+  </test> <!-- Contact Test -->
+</suite> <!-- Contact Suite -->
