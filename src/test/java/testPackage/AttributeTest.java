@@ -33,5 +33,11 @@ public class AttributeTest extends BaseClass {
 		System.out.println("adhoc1");
 
 	}
+	@Test(groups = "adhoc")
+	public void moveToContactsPage1() {
+		hp.clickContactsLink();
+		System.out.println("adhoc3");
+		
+	}
 
 }
